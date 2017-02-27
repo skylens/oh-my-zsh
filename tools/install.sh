@@ -61,7 +61,8 @@ main() {
       exit 1
     fi
   fi
-  env git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git $ZSH || {
+  #env git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git $ZSH || {
+  env git clone --depth=1 https://github.com/skylens/oh-my-zsh.git $ZSH || {
     printf "Error: git clone of oh-my-zsh repo failed\n"
     exit 1
   }
@@ -105,7 +106,6 @@ main() {
   echo ''
   echo 'Please look over the ~/.zshrc file to select plugins, themes, and options.'
   echo ''
-  echo 'p.s. Follow us at https://twitter.com/ohmyzsh.'
   echo ''
   echo 'p.p.s. Get stickers and t-shirts at http://shop.planetargon.com.'
   echo ''
